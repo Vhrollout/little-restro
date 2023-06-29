@@ -1,16 +1,17 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarDark from './components/Navbar';
-import feed from "./Assets/logor.png";
-import "./App.css"
+import NavbarDark from './Navbar';
+import "./App.css";
+import HeroElement from './components/Hero';
+import Footer from './Footer';
+
 
 function App() {
   return (
     <>
-    <div>
       <NavbarDark />
-     <img src={feed} alt='this do' />
-     </div>
+     <HeroElement />
+     <Footer />
     </>
   );
 }
