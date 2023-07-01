@@ -1,0 +1,73 @@
+.navimg{
+    width: 5rem;
+    height: 3rem;
+    position: relative;
+    right: 43rem;
+}
+
+
+.me-auto .nav{
+    padding-right: "2rem"
+}
+
+.text{
+    background-color: #0d0101;
+    height: 25rem;
+    color: #EE9972;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.preHeader{
+    width: 25rem;
+     height: 15rem;
+    margin-left: 7rem;
+   padding-top: 3rem;
+}
+
+.heading{
+    font-family: "Markazi Text";
+    font-size: 4rem;
+    font-weight: "bold";
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: "#F4CE14";
+}
+
+.imgDiv{
+     border-radius: 1rem;
+     box-shadow: inset;
+}
+
+.chef{
+    border-radius: 1rem;
+    width: 18rem;
+    height: 20rem;
+    width: 24rem;
+    margin-left: 42rem;
+    margin-top: -3rem;
+}
+
+button{
+    width: 197px;
+    height: 58px;
+    background-color: "#F4CE14";
+    font-family: "markazi text";
+    color: "#0D0101";
+    border-radius: 10px;
+}
+
+h3, p{
+    padding-top: 0;
+    margin-top: 0;
+    font-family: "markazi text";
+    font-weight: 400;
+}
+
+ p{
+    padding-top: 0;
+    margin-top: 0;
+    color: #EDEFEE;
+}
+

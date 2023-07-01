@@ -1,7 +1,8 @@
-import Container from 'react-bootstrap/Container';
+
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+
 import img from "./Assets/logor.png";
+import Image from 'react-bootstrap/Image';
 
 
 
@@ -10,16 +11,23 @@ function NavbarDark() {
   return (
 
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
-        <img src={img} alt="logo of little lemon" width={100} height={50}/>
-          <Nav className="me-auto" style={{marginLeft: "45rem"}}>
-            <Nav.Link className="nav" href="#home">Home</Nav.Link>
-            <Nav.Link className="nav" href="#features">Features</Nav.Link>
-            <Nav.Link className="nav" href="#pricing">Pricing</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+    <Nav className="justify-content-end bg-danger" activeKey="/home">
+      <Image className="navimg" src={img} alt='uhaha' fluid/>
+        <Nav.Item>
+          <Nav.Link href="/home">Active</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-1">Link</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-2">Link</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="disabled" disabled>
+            Disabled
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
     </>
   );
 }
