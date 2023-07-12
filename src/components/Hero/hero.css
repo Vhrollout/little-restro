@@ -1,0 +1,44 @@
+.hero-header{
+    font-family: "markazi text";
+    line-height: 1.2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    text-align: justify;
+}
+
+.heading{
+color: #4a9c30;
+margin-bottom: -0.5rem;
+font-weight: 500;
+font-weight: bold;
+font-size: 4rem;
+}
+
+h3, p{
+    color: #b2b8be;
+    font-family: "karla";
+    font-weight: 500;
+}
+h3{
+font-size: 2rem;
+font-weight:bold;
+}
+
+.Herobox{
+    background: #35443f;
+    height: 55vh;
+}
+
+.chef{
+    border-radius: 15px;
+    border: 1px solid #495E57;
+    background: lightgray 50% / cover no-repeat;
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: -2rem;
+    
+}

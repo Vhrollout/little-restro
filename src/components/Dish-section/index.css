@@ -1,0 +1,41 @@
+.card-container{
+    background-color: #1A5D1A;
+}
+
+.dish-header{
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.dish-header{
+    color: #FBD85D;
+    font-weight: 500;
+    font-weight: bold;
+    font-family: "markazi text";
+}
+
+.dish-button{
+    float: right;
+    margin-top: -5.35rem;
+    margin-right: 3rem;
+}
+
+.Card{
+   border-top-left-radius: 1rem;
+   border-top-right-radius: 1rem;
+   width: 23rem;
+   margin: 2rem 0;
+}
+
+.card1,.card3{
+    margin-left: 2rem;
+}
+
+.card2{
+    margin-left: 1.3rem;
+}
+
+.card-img{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
