@@ -21,9 +21,14 @@ h3, p{
     font-family: "karla";
     font-weight: 500;
 }
+
 h3{
 font-size: 2rem;
 font-weight:bold;
+}
+
+.bigclass{
+    background-color: #3f534c;
 }
 
 .Herobox{

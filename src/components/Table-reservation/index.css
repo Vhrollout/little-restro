@@ -1,0 +1,26 @@
+
+fieldset{
+    border-radius: 1rem;
+    border: 1px solid rgb(62, 53, 51);
+    width: 23rem;
+    height: 38rem;
+    display: grid;
+    gap: 1rem;
+    position: relative;
+    left: 26rem;
+    top: 1rem;
+    padding: 2rem;
+    background-color: #60cc22;
+    font-family:cursive;
+}
+
+label{
+    position: relative;
+    top: 0.8rem;
+}
+
+
+.formd{
+    background-color: #59754c;
+    height: 100vh;
+}

@@ -1,0 +1,24 @@
+
+
+.about-div{
+    width: 40%;
+    height: auto;
+    text-align: justify;
+   position: relative;
+   left: 23rem;
+   top: 5rem;
+   border: 2px solid #dbafaf;
+   border-radius: 1rem;
+   padding: 2rem;
+}
+
+
+.about-page{
+    width: 100%;
+    height: 100vh;
+  color: #f6dbdb;
+  text-align: center;
+  font-family: fantasy;
+  letter-spacing: 0.2rem;
+  background-image: -webkit-radial-gradient(#615252,#40784b,#655e24);
+}

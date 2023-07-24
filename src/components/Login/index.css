@@ -1,0 +1,31 @@
+.login {
+   position: relative;
+    left: 26rem;
+    top: 7rem;
+   display: grid;
+   gap: 1rem;
+   width: 20rem;
+   height: 18rem;
+   border: 1px solid rebeccapurple;
+   padding: 2rem;
+   color: aliceblue;
+   background-color: #30261c;
+   font-family: sans-serif;
+   border-radius: 1rem;
+   opacity: 0.8;
+}
+
+.login-div{
+    background-image: url(../../Assets/back2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* Login button */
+
+
+.logb{
+   margin-top: 1rem;
+}

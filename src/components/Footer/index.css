@@ -1,14 +1,17 @@
 .footer-container{
-    background-color: #60a47ac4;
+    background-color: #607e73;
     width: 100%;
     height: 25vh;
+    margin-top: 3rem;
 }
 
 .icons{
-    margin-top: 0.5rem;
-    margin-left: 30rem;
+    display: inline;
+    margin-left: 3rem;
+    margin-top: 3rem;
 }
 
-.footer-img{
-    margin-top: 2rem;
+.iconRow{
+   position: relative;
+   top: 3rem;
 }
