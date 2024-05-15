@@ -2,61 +2,71 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "./index.css";
-import Button from "react-bootstrap/Button";
 import Card from 'react-bootstrap/Card';
 import kabab from "../../Assets/kabab.jpg";
 import kofta from "../../Assets/kofta.jpg";
 import desert from "../../Assets/desert.jpg";
 
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 
 export default function DishList() {
+
+  useEffect(() => {
+    AOS.init({
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+  
+
     return(
-    <Container className='card-container' fluid>
-        <Row>
-            <header className='dish-header'>
-                <h1 className='dish-header'>This Weeks Specials!</h1>
-                <Button className='dish-button' variant="warning">Online Menu</Button>
-            </header>
-        </Row>
+      <>
+      <div className="card-class">
+      <Container className='card-container' fluid>
      <Row>
       <Col>
-      <Card className='Card card1'>
+      <Card className='m-2 bg-success' data-aos="fade-right">
       <Card.Img variant="top" className='card-img' src={kabab} alt="paneer tikka" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <Card.Title>Chefs Special</Card.Title>
+        <Card.Text className="text-white">
+          customize the dish you love to have on your table with ease
         </Card.Text>
       </Card.Body>
     </Card>
       </Col>
       <Col>
-      <Card className='Card card2' >
+      <Card className='m-2 bg-success' data-aos="fade-up">
       <Card.Img variant="top" className='card-img' src={desert} alt='chef preparing desert' />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <Card.Title>New Arrivals</Card.Title>
+        <Card.Text className="text-white">
+         We're added and updated our menu every day to add novelty in your plate
         </Card.Text>
       </Card.Body>
     </Card>
       </Col>
       <Col>
-      <Card className='Card' >
+      <Card className='m-2 bg-success' data-aos="fade-left" data-aos-delay="100">
       <Card.Img variant="top" className='card-img' src={kofta} alt="veg kofta" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <Card.Title>Most Popular</Card.Title>
+        <Card.Text className="text-white">
+          vote for your favorite and we'll make it our dish of the month
         </Card.Text>
       </Card.Body>
     </Card>
       </Col>
      </Row>
     </Container>
+      </div>
+   
+    </>
     );
 }

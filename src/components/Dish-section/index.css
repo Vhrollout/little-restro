@@ -1,43 +1,19 @@
-.card-container{
-    background-color: #3f534c;
+.card-class{
+  height: 100vh;
+  padding: 4rem 0;
+  background-color: bisque;
 }
 
 .dish-header{
     margin-bottom: 3rem;
     margin-top: 4rem;
-}
-
-.dish-header{
-    color: #FBD85D;
+    color: #302809;
     font-weight: 500;
     font-weight: bold;
     font-family: "markazi text";
 }
 
-.dish-button{
-    float: right;
-    margin-top: -5.35rem;
-    margin-right: 3rem;
-}
 
-.Card{
-   border-top-left-radius: 1rem;
-   border-top-right-radius: 1rem;
-   margin-bottom: 7rem;
-   position: relative;
-   left: 3rem;
-   width: 15rem;
-   height: 20rem;
-   background-color: #638579;
-}
 
-.Card:img{
-    width: 15.3rem;
-    height: 20.3rem;
-    transition: 1s;
-}
 
-.card-img{
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-}
+

@@ -15,18 +15,21 @@ import {
 import Home from './components/Home/Home';
 import Orders from './components/Order';
 import Login from './components/Login';
-
+import SimpleSlider from './components/carousel2/SimpleSlider';
 
 function App() {
   return (
     <>
+   
      <NavbarDark />
    <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/about' element={<About />} />
+      <Route path='/simpleSlider' element={<SimpleSlider />} />
       <Route path='/tableForm' element={<TableForm />} />
       <Route path='/order' element={<Orders />} />
       <Route path='/login' element={<Login/>} />
+      <Route path='/tableForm' element={<TableForm />} />
     </Routes>
     </>
   );

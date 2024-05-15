@@ -1,3 +1,4 @@
+
 .hero-header{
     font-family: "markazi text";
     line-height: 1.2rem;
@@ -27,13 +28,9 @@ font-size: 2rem;
 font-weight:bold;
 }
 
-.bigclass{
-    background-color: #3f534c;
-}
-
 .Herobox{
     background: #35443f;
-    height: 55vh;
+    height: 60dvh;
 }
 
 .chef{
@@ -45,5 +42,8 @@ font-weight:bold;
     height: auto;
     margin-top: 2rem;
     margin-left: -2rem;
-    
+}
+
+.new_home{
+    margin: 0 6rem;
 }
