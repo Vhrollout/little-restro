@@ -24,6 +24,7 @@ function Cart({ incrementItemQuantity, removeFromCart, Dishes, cartItems, decrem
                     <span>{item.quantity}</span>
                     <button onClick={() => decrementItemQuantity(item)}>-</button>
                   </div>
+                 <button onClick={()=> removeFromCart(item)}>Remove from Cart</button>
                 </div>
               </div>
             </li>

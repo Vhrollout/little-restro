@@ -1,0 +1,52 @@
+.dish-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.dish-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  background-color: #f3f0f0;
+}
+
+.dish-card:hover {
+  transform: scale(1.05);
+}
+
+.dish-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.dish-name {
+  color: #975757;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.dish-price {
+  color: #975757;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #ff9900;
+}
