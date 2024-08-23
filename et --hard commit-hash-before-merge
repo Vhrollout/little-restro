@@ -1,0 +1,97 @@
+[33mcommit 3632e86b8c388c1b3d22803cfd0bc2f196731c4f[m[33m ([m[1;36mHEAD -> [m[1;32mnext-step[m[33m)[m
+Merge: ca6c4dd 636ae06
+Author: Vihar Muneshwar <viharm88@gmail.com>
+Date:   Tue Aug 20 19:26:34 2024 +0530
+
+    Merge remote-tracking branch 'origin/next-step' into next-step
+
+[33mcommit ca6c4ddd93d38bea96ed8241bb8071ea334181ed[m
+Author: Vihar Muneshwar <viharm88@gmail.com>
+Date:   Tue Aug 20 19:24:18 2024 +0530
+
+    app updated with few componenets
+
+[33mcommit 636ae0698e5184353fc906e4e31e819ce9f28a3b[m[33m ([m[1;31morigin/next-step[m[33m)[m
+Author: Vhrollout <83583099+Vhrollout@users.noreply.github.com>
+Date:   Wed Jul 3 15:56:28 2024 +0530
+
+    Create CNAME
+
+[33mcommit 3cc0388c9fa2be68488dca0cc286511ddf52ff5d[m
+Merge: 1a37a37 03dd3ca
+Author: Vihar Muneshwar <viharm88@gmail.com>
+Date:   Wed May 15 22:18:34 2024 +0530
+
+    Merge branch 'next-step' of https://github.com/Vhrollout/little-restro into next-step
+
+[33mcommit 1a37a3768a358f01065a10c902493b38005c10c4[m
+Author: Vihar Muneshwar <viharm88@gmail.com>
+Date:   Wed May 15 22:18:26 2024 +0530
+
+    Intermediate level components building done
+
+[33mcommit 03dd3cac3dfd93ffaad1d95fa2783880325b4f22[m
+Merge: 6e53723 ce22134
+Author: Vhrollout <83583099+Vhrollout@users.noreply.github.com>
+Date:   Thu May 2 21:59:13 2024 +0530
+
+    Merge pull request #1 from Vhrollout/dependabot/npm_and_yarn/webpack-dev-middleware-5.3.4
+    
+    Bump webpack-dev-middleware from 5.3.3 to 5.3.4
+
+[33mcommit ce2213486d860598fd51e349310f97bcedee9050[m[33m ([m[1;31morigin/dependabot/npm_and_yarn/webpack-dev-middleware-5.3.4[m[33m)[m
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Thu May 2 16:25:37 2024 +0000
+
+    Bump webpack-dev-middleware from 5.3.3 to 5.3.4
+    
+    Bumps [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) from 5.3.3 to 5.3.4.
+    - [Release notes](https://github.com/webpack/webpack-dev-middleware/releases)
+    - [Changelog](https://github.com/webpack/webpack-dev-middleware/blob/v5.3.4/CHANGELOG.md)
+    - [Commits](https://github.com/webpack/webpack-dev-middleware/compare/v5.3.3...v5.3.4)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: webpack-dev-middleware
+      dependency-type: indirect
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+
+[33mcommit 6e53723405cf24b78e5ff42ed013026a00ec8bf0[m
+Author: Vhrollout <83583099+Vhrollout@users.noreply.github.com>
+Date:   Tue Jul 25 00:06:53 2023 +0530
+
+    Create SECURITY.md
+    
+    added security
+
+[33mcommit b878696cbb5a86c9ff7cacb3dc88a70cb54f227d[m
+Author: Vihar Muneshwar <viharm88@gmail.com>
+Date:   Tue Jul 25 00:04:28 2023 +0530
+
+    addition of some more components
+
+[33mcommit 7845b5bfc311e75a6512eac1f2c4ebd0b2b1c21f[m[33m ([m[1;31mlittle-restro/next-step[m[33m)[m
+Author: Vihar Muneshwar <viharm88@gmail.com>
+Date:   Wed Jul 12 22:21:10 2023 +0530
+
+    Cards and footer are structured
+
+[33mcommit ad71aa707f7f2d0a5a93d1a5479139e5121110df[m
+Author: Vihar Muneshwar <viharm88@gmail.com>
+Date:   Sat Jul 1 10:39:40 2023 +0530
+
+    navbar and front section are set
+
+[33mcommit 1e3f326c16002175ffcde974a56d0e067e35d4fe[m
+Author: Vihar Muneshwar <viharm88@gmail.com>
+Date:   Thu Jun 29 22:17:16 2023 +0530
+
+    added new additional components.
+
+[33mcommit ed4e6c6433ff17e58092d6f5335ad117e269420a[m[33m ([m[1;32mmain[m[33m)[m
+Author: Vihar Muneshwar <viharm88@gmail.com>
+Date:   Wed Jun 28 11:46:21 2023 +0530
+
+    navbar and basic structure
