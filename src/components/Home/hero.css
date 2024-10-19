@@ -1,6 +1,6 @@
 
 .hero-header{
-    font-family: "markazi text";
+    font-family: var(--Mfont);
     line-height: 1.2rem;
     margin-left: 3rem;
     margin-top: 2rem;
@@ -36,7 +36,6 @@ font-weight:bold;
 .chef{
     border-radius: 15px;
     border: 1px solid #495E57;
-    background: lightgray 50% / cover no-repeat;
     max-width: 80%;
     margin-top: 2rem;
 }

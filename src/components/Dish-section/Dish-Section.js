@@ -2,31 +2,32 @@
 import "./DishList.css";
 
 export default function DishList({
-  cartItems,
   addToCart,
   products,
-  calculateTotalItems,
-  calculateTotalPrice,
 }) {
 
 
   return (
-    <div className="dish-list">
-      { (
-        products.map((item) => (
-          <div key={item.id} className="dish-card">
-            <img src={item.img} alt={item.name} className="dish-image" />
-            <h3 className="dish-name">{item.name}</h3>
-            <p className="dish-price">${item.price}</p>
-            <button
-              className="add-to-cart-button"
-              onClick={() => addToCart(item)}
-            >
-              Add to cart
-            </button>
+    <div className="product-list-container">
+      {products.map((category, index) => (
+        <div key={index} className="category-container">
+          <h2 className="category-title">{category.category}</h2>
+          <div className="product-grid">
+            {category.products.map((product) => (
+              <div key={product.id} className="product-card">
+                <div className="product-image-container">
+                  <img src={product.img} alt={product.name} className="product-image" />
+                </div>
+                <div className="product-info">
+                  <h3 className="product-name">{product.name}</h3>
+                  <p className="product-price">Price: ${product.price}</p>
+                  <button className="add-to-cart-button" onClick={()=>addToCart(product)}>Add to Cart</button>
+                </div>
+              </div>
+            ))}
           </div>
-        ))
-      )}
+        </div>
+      ))}
     </div>
   );
 }

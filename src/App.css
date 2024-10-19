@@ -1,3 +1,13 @@
 body{
-    background-color: antiquewhite;
+    background-color: #dfdedd;
+    box-sizing: border-box;
+}
+:root{
+    --textColor: #9e7bb9;
+    --bg: #35443f;
+    --other: #495E57;
+    --objects: #4a9c30;
+    --Pfont: "markazi text";
+    --Mfont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --Ifont: "karla";
 }

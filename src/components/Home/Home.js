@@ -1,4 +1,4 @@
-import chef from "../../Assets/yelow.jpg";
+
 import Image from 'react-bootstrap/Image';
 import "./hero.css";
 import Container from 'react-bootstrap/Container';
@@ -26,7 +26,7 @@ export default function Home({ cartItems, addToCart, products, calculateTotalIte
               </header>
             </Col>
             <Col className="imgDiv d-none d-sm-block">
-              <Image className="chef" src={chef} alt="plate with food" fluid />
+              <Image className="chef" src="https://th.bing.com/th/id/OIP.0AkIMHUv7Gm7nOdlErxspwHaEc?w=300&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="plate with food" fluid />
             </Col>
           </Row>
         </Container>

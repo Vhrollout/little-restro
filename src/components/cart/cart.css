@@ -1,78 +1,98 @@
 .main {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 20px;
-  background-color: #f0f0f0;
 }
 
 .cart {
-  display: inline-block;
-  width: 300px;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  flex: 1;
+  margin-right: 20px;
+  background-color: #c4b0b0;
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1 );
+  border-radius: 0.5rem;
 }
 
-.cart:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.head{
+  color: #343a40;
+  margin: auto 0;
 }
 
-.cart-list img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-li {
+li{
   list-style-type: none;
+  padding-right: 1.5rem;
+  
 }
 
 .cart-list {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.cart-list img {
+  max-width: 150px;
+  margin-right: 80px;
+}
+
+.cart-list div {
+  flex: 1;
+}
+
+.cart-list .details {
+  display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.cart h3 {
-  margin-top: 15px;
-  font-size: 1.4rem;
-  color: #333;
+.cart-list .details h5,
+.cart-list .details h4 {
+  margin: 5px 0;
+  color: #000;
 }
 
-.cart p {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #666;
+.btn-div {
+  display: flex;
+  align-items: center;
 }
 
-.cart button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
+.btn-div button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-div button:hover {
+  background-color: #0056b3;
+}
+
+.rm {
+  background-color: red;
   color: white;
   border: none;
-  border-radius: 5px;
+  padding: 5px 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-radius: 3px;
+  margin-left: 10px;
 }
 
-.cart button:hover {
-  background-color: #45a049;
+.rm:hover {
+  background-color: darkred;
 }
 
-@media (max-width: 768px) {
-  .cart {
-    width: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-  .cart {
-    width: 100%;
-  }
+.total {
+  font-weight: bold;
+  color: #333;
 }
