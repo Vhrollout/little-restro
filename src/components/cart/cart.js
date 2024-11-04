@@ -1,38 +1,51 @@
 import React from "react";
-import './cart.css';
+import { useSelector, useDispatch } from "react-redux";
+import { incrementItem, decrementItem, removeFromCart } from "../Actions/cart-actions";
+import "./cart.css";
+import { Link } from "react-router-dom";
 
-function Cart({ incrementItemQuantity, removeFromCart, Dishes, cartItems, decrementItemQuantity, totalPrice, totalItems }) {
+export default function Cart() {
+  const cartItems = useSelector(state => state.cart.cartItems);
+  const dispatch = useDispatch();
+  
+  const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+  const totalPrice = cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
+ 
+
   return (
-    <div className="main">
-      <div className='cart'>
-        <h3 className='head'>Your Cart</h3>
-        <h3 className='head'>Total items: {totalItems}</h3>
-        <ul>
-          {cartItems.map((item) => (
-            <li key={item.id}>
-              <div className="cart-list">
-                <img src={item.img} alt={item.name} />
-                <div className="details">
-                  <h5>{item.name} - ${item.price}</h5>
-                  <h5>Item cost: ${item.quantity * item.price}</h5>
-                  <div className='btn-div'>
-                    <button onClick={() => incrementItemQuantity(item)}>+</button>
-                    <h3>{item.quantity}</h3>
-                    <button onClick={() => decrementItemQuantity(item)}>-</button>
-                  </div>
-                  <button className='rm' onClick={() => removeFromCart(item)}>Remove</button>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
-        <h3 className='head'>Cart Total: ${totalPrice}</h3>
+    <div className="cart-container">
+      <div className="cart-header">
       </div>
-      <div>
-        <img src="https://static.vecteezy.com/system/resources/previews/024/524/036/original/man-carrying-shopping-bags-free-png.png" alt="cart gif" width="450px" />
+      <div className="cart-items">
+        {cartItems.map((item) => (
+          <div key={item.id} className="cart-item">
+            <img src={item.img} alt={item.name} />
+            <div className="cart-item-details">
+              <h4>{item.name}</h4>
+              <p>Price: ${item.price}</p>
+              <p>Quantity: {item.quantity}</p>
+            </div>
+            <div className="cart-item-actions">
+              <button onClick={() => dispatch(incrementItem(item))}>+</button>
+              <button onClick={() => dispatch(decrementItem(item))}>-</button>
+              <button onClick={() => dispatch(removeFromCart(item))}>🗑️</button>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="cart-summary">
+        <p>Total Items: {totalItems}</p>
+        <p>Total Price: ${totalPrice}</p>
+      </div>
+      <div className="shopping-btn">
+      <button className="btn1">
+      <Link to="/" className="nav-link">Continue Shopping</Link>
+      </button>
+       
+        <button className="btn2" onClick={()=>alert("yet to be functionalised")}>
+          Payment
+        </button>
       </div>
     </div>
   );
 }
-
-export default Cart;

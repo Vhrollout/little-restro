@@ -1,98 +1,97 @@
-.main {
+/* Cart Container */
+.cart-container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 50%;
+  background-color: #adabab;
+}
+
+/* Cart Header */
+.cart-header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.cart {
-  flex: 1;
+/* Cart Items */
+.cart-items {
+  border-top: 1px solid #5c5b5b;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #7d7b7b;
+}
+
+.cart-item img {
+  width: 30%;
+  object-fit: cover;
   margin-right: 20px;
-  background-color: #c4b0b0;
-  text-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1 );
-  border-radius: 0.5rem;
 }
 
-.head{
-  color: #343a40;
-  margin: auto 0;
-}
-
-li{
-  list-style-type: none;
-  padding-right: 1.5rem;
-  
-}
-
-.cart-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.cart-list img {
-  max-width: 150px;
-  margin-right: 80px;
-}
-
-.cart-list div {
+.cart-item-details {
   flex: 1;
 }
 
-.cart-list .details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+.cart-item-details h4, p{
+  color: #454040;
 }
 
-.cart-list .details h5,
-.cart-list .details h4 {
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  max-width: 120px;
+  border: 1.5px solid #dcc5c5;
+  border-radius: 10px;
+  background-color: #7d7b7b;
+}
+
+.cart-item-actions button, .btn1, .btn2{
+  margin: 4px 2px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: 300ms;
+  background-color: #ded1d1;
+}
+
+.cart-item-actions button:hover, .btn1:hover, .btn2:hover  {
+   background-color: #adabab;
+   border: 1px solid #dcc5c5;
+}
+
+.btn1{
+  color: black;
+}
+
+
+
+/* Cart Summary */
+.cart-summary {
+  padding: 10px 0;
+  text-align: right;
+  border-top: 2px solid #7d7b7b;
+}
+
+.cart-summary p {
   margin: 5px 0;
-  color: #000;
 }
 
-.btn-div {
-  display: flex;
-  align-items: center;
-}
+@media (max-width: 600px) {
+  .cart-item {
+      flex-direction: column;
+      text-align: center;
+  }
 
-.btn-div button {
-  margin: 0 5px;
-  padding: 5px 10px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  border-radius: 3px;
-}
+  .cart-item img {
+      margin-bottom: 10px;
+  }
 
-.btn-div button:hover {
-  background-color: #0056b3;
-}
-
-.rm {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  border-radius: 3px;
-  margin-left: 10px;
-}
-
-.rm:hover {
-  background-color: darkred;
-}
-
-.total {
-  font-weight: bold;
-  color: #333;
+  .cart-item-actions {
+      justify-content: center;
+  }
 }
