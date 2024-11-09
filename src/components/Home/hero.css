@@ -1,42 +1,121 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-.hero-header{
+.hero-header {
     font-family: var(--Mfont);
     line-height: 1.2rem;
     margin-left: 3rem;
     margin-top: 2rem;
     width: 100%;
-    height: auto;
+    max-height: 400px;
     text-align: justify;
+    height: 60%;
+    animation: fadeInUp 1s ease-in-out;
 }
 
-.heading{
-color: #4a9c30;
-margin-bottom: -0.5rem;
-font-weight: 500;
-font-weight: bold;
-font-size: 4rem;
+.heading {
+    color: #4a9c30;
+    margin-bottom: -0.5rem;
+    font-weight: bold;
+    font-size: 4rem;
+    animation: fadeInUp 1s ease-in-out 0.2s both;
 }
 
-h3, p{
-    color: #b2b8be;
+header p {
+    color: #7c95ae;
     font-family: "karla";
     font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin: 3rem 0;
+    width: 50%;
+    animation: fadeInUp 1s ease-in-out 0.4s both;
 }
 
-h3{
-font-size: 2rem;
-font-weight:bold;
+header h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #7c95ae;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-in-out 0.3s both;
 }
 
-.Herobox{
+.Herobox {
     background: #35443f;
-    height: 60dvh;
+    height: 80vh;
 }
 
-.chef{
+.chef {
     border-radius: 15px;
-    border: 1px solid #495E57;
-    max-width: 80%;
+    width: 70%;
     margin-top: 2rem;
+    margin-left: 2rem;
+    background-color: #35443f;
+    animation: fadeInUp 1s ease-in-out 0.5s both;
 }
 
+@media (max-width: 768px) {
+    .hero-header {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    header p {
+        font-size: 2rem;
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    header h3 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .chef {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-header {
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    header p {
+        font-size: 1.5rem;
+        width: 90%;
+        margin: 1.5rem auto;
+    }
+
+    header h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .chef {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
