@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import img from "../Assets/Logo .png";
 import "./MobileNavbar.css";
+import Search from '../search/search';
 
 function MobileNavbar() {
     const [showSidebar, setShowSidebar] = useState(false);
@@ -42,6 +43,9 @@ function MobileNavbar() {
                         <FontAwesomeIcon icon={faShoppingCart} className="cart-icon" aria-label="Cart" />
                         <span className='tl'>{totalItems}</span>
                     </Link>
+                </Nav.Item>
+                <Nav.Item>
+                    <Search />
                 </Nav.Item>
             </Nav>
         </Navbar>
