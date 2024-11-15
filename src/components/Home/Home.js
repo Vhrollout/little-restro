@@ -4,17 +4,18 @@ import "./hero.css";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import DishList from "../Dish-section/Dish-Section";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import TableForm from "../Table-reservation";
+import MobileNavbar from '../Navbar/Navbar';
 
-export default function Home({ cartItems, addToCart, products, calculateTotalItems, calculateTotalPrice, totalItems, totalPrice }) {
+export default function Home() {
   return (
     <>
       <div>
+      <MobileNavbar />
         <Container className="Herobox" fluid>
           <Row className="text">
             <Col>
@@ -22,7 +23,7 @@ export default function Home({ cartItems, addToCart, products, calculateTotalIte
                 <h1 className="heading">Little Lemon</h1>
                 <h3>Chicago</h3>
                 <p>Savor the World: Unforgettable Flavors from Every Continent</p>
-                <Link to="/TableForm"><Button variant="warning">Reserve my table</Button></Link>
+                <Link to="/TableForm"><button className='relative right-2 border-none'>Reserve my Table</button></Link>
               </header>
             </Col>
             <Col className="imgDiv d-none d-sm-block">
@@ -30,8 +31,7 @@ export default function Home({ cartItems, addToCart, products, calculateTotalIte
             </Col>
           </Row>
         </Container>
-        <DishList cartItems={cartItems} addToCart={addToCart} products={products} calculateTotalPrice={calculateTotalPrice} calculateTotalItems={calculateTotalItems} totalPrice={totalPrice}
-          totalItems={totalItems} />
+        <DishList />
         <Footer />
       </div>
     </>
