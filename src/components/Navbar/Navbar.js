@@ -21,14 +21,14 @@ function MobileNavbar() {
     const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
 
     return (
-        <Navbar className="mobile-navbar">
+        <Navbar className="mobile-navbar w-full" expand="lg">
             <Navbar.Brand href="#home">
                 <Image src={img} alt='Home' fluid />
             </Navbar.Brand>
             
             <FontAwesomeIcon icon={faBars} className="breadcrumb-icon" onClick={toggleSidebar} />
             <Nav className={`mobile-nav ${showSidebar ? 'show' : ''}`}>
-                <FontAwesomeIcon icon={faTimes} className="close-sidebar" onClick={toggleSidebar} />
+                {showSidebar && <FontAwesomeIcon icon={faTimes} className="close-sidebar" onClick={toggleSidebar} />}
                 <Nav.Item>
                     <Link to="/" className="nav-link" onClick={toggleSidebar}>Home</Link>
                 </Nav.Item>

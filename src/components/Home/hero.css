@@ -81,31 +81,38 @@ header button{
 
     .heading {
         font-size: 3rem;
-        text-align: center;
+    }
+
+    header p, .heading, header h3 {
+        text-align: left;
     }
 
     header p {
         font-size: 2rem;
         width: 80%;
-        margin: 2rem auto;
     }
 
     header h3 {
         font-size: 1.8rem;
-        text-align: center;
     }
 
     .chef {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+       display: none;
     }
+
+    .text{
+        display: block;
+        width: 100%;
+        padding-left: 3em;
+    }
+
 }
 
 @media (max-width: 480px) {
     .hero-header {
-        margin: 0.5rem auto 0 auto;
+        margin: 0 auto;
         display: block;
+        text-align: center;
     }
 
     .heading {

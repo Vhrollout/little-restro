@@ -5,6 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  margin: 0;
 }
 
 .nav-link {
@@ -43,7 +44,7 @@
       background-color: #333;
       padding: 2rem;
       z-index: 1000;
-      transition: transform 0.3s ease-in-out;
+      transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) ease-in-out;
       transform: translateX(100%);
   }
   .mobile-nav.show {
