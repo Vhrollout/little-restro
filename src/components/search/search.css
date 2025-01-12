@@ -1,6 +1,7 @@
 form input{
     width: 300px;
     border-radius: 5px 0 0 5px;
+    margin-left: 3em;
 }
 
 form button{
@@ -26,5 +27,4 @@ form button{
 
 .search-card{
     max-width: 200px;
-    
 }

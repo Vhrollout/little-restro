@@ -6,6 +6,9 @@
   top: 0;
   z-index: 100;
   margin: 0;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 2px 3px rgba(239, 237, 237, 0.1),0 2px 8px rgba(245, 245, 243, 0.1);
 }
 
 .nav-link {
@@ -22,7 +25,7 @@
   margin-right: 5px;
 }
 
-.tl {
+.totalCartItems {
   font-size: 1.3rem;
   font-weight: bold;
   color: #ffcc00;
@@ -64,6 +67,10 @@
   display: none;
 }
 
+.close-sidebar{
+  display: none;
+}
+
 @media (max-width: 768px) {
   .breadcrumb-icon {
       display: inline-block;
@@ -85,5 +92,8 @@
     color: #fff;
     cursor: pointer;
     margin-bottom: 1rem;
+}
+.close-sidebar{
+  display: block;
 }
 }

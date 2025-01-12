@@ -1,30 +1,22 @@
 // Search.js
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { setSearch, setSearchResults } from '../features/search/searchSlice';
-import productCategories from '../products/products';
+import { useCart } from 'react-use-cart';
 import './search.css'; // Assume you have a CSS file for styling
 
 const Search = () => {
-  const dispatch = useDispatch();
-  const [searchTerm, setSearchTerm] = useState('');
+  let [searchTerm, setSearchTerm] = useState('');
+  const { getItem, items } = useCart();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(setSearch(searchTerm));
-
-    const flatProducts = productCategories.flatMap(category => category.products);
-
-    const newProducts = flatProducts.filter((product) => {
-      return product.name && product.name.toLowerCase().includes(searchTerm.toLowerCase());
-    });
-
-    dispatch(setSearchResults(newProducts));
+    const itemName = items.filter((item) => item.name === searchTerm);
+     getItem(itemName)
+    // Perform search logic here
   };
 
   const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value);
-  };
+    setSearchTerm(e.target.value)
+  }
 
   return (
     <div>

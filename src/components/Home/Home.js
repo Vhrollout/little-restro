@@ -5,17 +5,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import DishList from "../Dish-section/Dish-Section";
-import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import TableForm from "../Table-reservation";
-import MobileNavbar from '../Navbar/Navbar';
 
 export default function Home() {
   return (
     <>
       <div>
-      <MobileNavbar />
         <Container className="Herobox" fluid>
           <Row className="text">
             <Col>
@@ -32,7 +29,7 @@ export default function Home() {
           </Row>
         </Container>
         <DishList />
-        <Footer />
+        
       </div>
     </>
   );

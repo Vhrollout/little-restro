@@ -1,9 +1,9 @@
 @keyframes fadeInUp {
-  from {
+  0% {
       opacity: 0;
       transform: translateY(20px);
   }
-  to {
+  50% {
       opacity: 1;
       transform: translateY(0);
   }
@@ -14,6 +14,7 @@
   flex-direction: column;
   font-family: var(--Mfont);
   animation: fadeInUp 1s ease-in-out;
+  color: #333;
 }
 
 .category-container {
@@ -23,31 +24,22 @@
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(201px, 1fr));
+  gap: 15px;
   animation: fadeInUp 1s ease-in-out;
+  margin: 0.4em 0;
+  color: #000;
 }
 
  .product-card {
   background-color: #fff;
   border-radius: 8px;
   padding: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0.4em 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1),0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 }
-
-.rproduct-card{
-  max-width: 300px;
-  background-color: #fff;
-  border-radius: 8px;
-  margin: 1rem auto;
-  padding: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-}
-
 
 .product-card:hover {
   transform: translateY(-5px);
@@ -70,7 +62,7 @@
 }
 
 .product-name {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   color: #333;
   margin-bottom: 8px;
@@ -84,20 +76,6 @@
   font-family: var(--Mfont);
 }
 
-.add-to-cart-button {
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.add-to-cart-button:hover {
-  background-color: #3e8e41;
-}
 
 /*                                        search result component                                               */
 @media (max-width: 480px) {

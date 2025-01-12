@@ -1,8 +1,7 @@
-body{
-    background-color: #dfdedd;
+.App{
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 60em;
+    max-width: 55em;
 }
 :root{
     --textColor: #9e7bb9;
